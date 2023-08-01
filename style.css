@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    background-color: rgb(250, 250, 250);
+}
+
+
+header{
+    height:75px;
+    border-style: outset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: white;
+}
+
+
+h1{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-left: 15px;
+    font-family: 'Roboto Serif', serif;
+    cursor: default;
+}
+
+.bloggram-icon{
+    height: 42px;
+    padding-left: 20px;
+    object-fit: cover;
+}
+
+
+.icon-container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.profil-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.home-icon{
+    height: 28px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+
+.message-icon{
+    height: 27px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+main{
+    padding-top: 100px;
+}
+
+.user-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+#post-container{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+
+.heart-icon{
+    height: 30px;
+    object-fit: cover;
+    padding: 10px 0 10px 10px;
+    cursor: pointer;
+}
+
+.description{
+    font-size: 15px;
+    padding: 0 10px 10px 10px;
+}
+
+.posts{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    border: solid 2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+
+.user-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 0 10px 0;
+}
+
+.user-info{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+
+input{
+    border: 0px;
+    padding: 15px 10px 15px 10px;
+    outline: none;
+    width: -webkit-fill-available;
+}
+
+
+.add-comment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    padding: 6px 24px 6px 24px;
+    margin-right: 5px;
+    background-color: white;
+    color: dodgerblue;
+    font-size: 17px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: solid 2px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+
+.likes{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.comment-section{
+    padding: 0 10px 0 10px;
+    overflow-wrap: anywhere;
+}
+
+
+@media(max-width: 800px){
+
+    .posts{
+        width: 500px;
+    }
+}
+
+
+@media(max-width: 600px){
+
+    header{
+        height: 60px;
+    }
+
+    .bloggram-icon{
+        height: 32px;
+        padding-left: 16px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .profil-icon{
+        height: 40px;
+        width: 40px;
+    }
+
+    .message-icon{
+        height: 20px;
+        width: 30px;
+    }
+
+    .home-icon{
+        height: 20px;
+        padding-right: 16px;
+    }
+
+    .icon-container{
+        gap: 20px;
+    }
+    
+    main{
+        padding-top: 60px;
+    }
+
+    .posts{
+        width: 350px;
+    }
+
+    .heart-icon{
+        height: 20px;
+    }
+}
+
+
+@media(max-width: 450px){
+
+    .posts{
+        width: 270px;
+    }
+
+    .profil-icon{
+        display: none;
+    }
+
+    .home-icon{
+        display: none;
+    }
+
+    .message-icon{
+        padding-right: 16px;
+    }
+
+    button{
+        padding: 4px 16px 4px 16px;
+        font-size: 14px;
+    }
+
+    .user-icon{
+        width: 40px;
+        height: 40px;
+    }
+}
